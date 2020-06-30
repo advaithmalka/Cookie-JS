@@ -2,7 +2,8 @@ function setCookie(cookieName, cookieValue, daysUntilExpiration) {
 	var date = new Date();
 	date.setTime(date.getTime() + daysUntilExpiration * 86400000);
 	var expires = "expires=" + date.toGMTString();
-	document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+	document.cookie =
+		cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
 function getCookie(cookieName) {
@@ -22,5 +23,15 @@ function getCookie(cookieName) {
 }
 
 function deleteCookie(cookieName) {
-   document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/'
- }
+	document.cookie =
+		cookieName + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+}
+
+const _setCookie = setCookie;
+export { _setCookie as setCookie };
+
+const _getCookie = getCookie;
+export { _getCookie as getCookie };
+
+const _deleteCookie = deleteCookie;
+export { _deleteCookie as deleteCookie };
