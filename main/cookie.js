@@ -27,11 +27,4 @@ function deleteCookie(cookieName) {
 		cookieName + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
 }
 
-const _setCookie = setCookie;
-export { _setCookie as setCookie };
 
-const _getCookie = getCookie;
-export { _getCookie as getCookie };
-
-const _deleteCookie = deleteCookie;
-export { _deleteCookie as deleteCookie };
