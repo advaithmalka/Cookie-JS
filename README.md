@@ -20,7 +20,7 @@ npm i web-cookies-js
 Place this at the bottom of your HTML document
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/grid-view-js@1.4.0/main/grid-view.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/web-cookies-js/main/cookie.min.js" crossorigin="anonymous"></script>
 ```
 
 ### Download directly to your PC
