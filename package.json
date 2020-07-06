@@ -1,6 +1,6 @@
 {
 	"name": "web-cookies-js",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "Easily create and manage cookies for your new website with Cookie JS",
 	"main": "main/cookie.js",
 	"scripts": {
